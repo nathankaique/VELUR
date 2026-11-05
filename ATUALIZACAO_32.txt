@@ -1,0 +1,9 @@
+VÉLOUR 3.2 - CADASTRO DE CLIENTES
+
+1. Cadastro de clientes: no mínimo 6 caracteres, sem exigir letras e números juntos.
+2. Cadastro de clientes valida no servidor e no campo do navegador.
+3. Regra administrativa separada: VELOUR_ADMIN_PASSWORD exige pelo menos 12 caracteres apenas na configuração inicial do administrador.
+4. E-mails duplicados bloqueados pelo banco de dados (UNIQUE).
+5. Para confirmar a versão ativa, acesse http://127.0.0.1:8765/api/health e veja version=3.2.
+6. Se aparecer a mensagem antiga de senha, pare qualquer servidor anterior (Ctrl+C) e abra esta pasta, sem usar Live Server. Recarregue com Ctrl+Shift+R.
+7. Banco online: somente se SUPABASE_DATABASE_URL estiver configurada no servidor. Se o health retornar local-sqlite, novos cadastros ficam no computador.

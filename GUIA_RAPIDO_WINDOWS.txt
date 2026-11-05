@@ -1,0 +1,40 @@
+VELOUR 2.7 - GUIA RAPIDO PARA WINDOWS
+
+1. Extraia TODO o ZIP; nao abra o projeto de dentro do ZIP.
+2. Abra a pasta velour-marketplace no VS Code.
+3. Clique duas vezes em INICIAR_VELOUR.bat pelo Explorador de Arquivos.
+4. Quando aparecer 'VELOUR PRONTO', acesse o endereco mostrado na tela.
+5. Mantenha a janela preta aberta enquanto usa o site.
+
+BANCO LOCAL OU ONLINE?
+Sem SUPABASE_DATABASE_URL, o projeto usa SQLite local automaticamente.
+Com SUPABASE_DATABASE_URL, utiliza o PostgreSQL online do seu projeto Supabase.
+Os 20 veiculos de demonstracao ja foram cadastrados no banco VELOUR online.
+Configure a URL no Windows como variavel de ambiente de usuario, NAO em JS ou HTML.
+NUNCA publique a senha/connection string do banco na web ou em repositorio.
+
+CONFIGURAR BANCO ONLINE NO WINDOWS (PowerShell apenas nesta janela):
+$env:SUPABASE_DATABASE_URL = 'COLE_AQUI_SUA_URI_POSTGRESQL_PRIVADA'
+py -m pip install -r requirements.txt
+py server.py
+
+OBS: a configuracao acima vale somente para a janela de terminal atual.
+A URI completa so deve ser guardada em ambiente privado ou gerenciador de segredos.
+No Supabase: Connect > Connection string > Session pooler.
+
+PRIMEIRO ACESSO ADMIN:
+Configure tambem VELOUR_ADMIN_PASSWORD com uma senha FORTE (12 caracteres ou mais)
+ANTES de iniciar o servidor pela primeira vez com um banco sem admin.
+Exemplo PowerShell (substitua pelo seu segredo, nao compartilhe):
+$env:VELOUR_ADMIN_PASSWORD = 'SUA_SENHA_FORTE_AQUI'
+
+ERROS FREQUENTES:
+- ERR_CONNECTION_REFUSED: janela do servidor fechada, porta ocupada ou porta diferente.
+- ERRO AO ABRIR PORTA 8000: encerre o processo anterior ou altere VELOUR_PORT.
+- ERRO AO PREPARAR BANCO: confira senha/URI e a internet; instale requirements.txt.
+- Port 8000 ocupada? PowerShell: $env:VELOUR_PORT='8001'; py server.py
+- O arquivo .bat deve ser executado dentro da pasta extraida.
+- Se o Live Server mostrar carros, isso NAO comprova que o Python esta rodando.
+
+TESTES:
+py -m unittest discover -s tests -v

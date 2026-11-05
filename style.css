@@ -1,0 +1,454 @@
+:root{--bg:#101110;--panel:#171917;--panel2:#1d201d;--text:#f2f0e9;--muted:#a4a79f;--gold:#8eb8e8;--gold2:#c0dcff;--accent:#8eb8e8;--accent-hover:#c0dcff;--line:rgba(255,255,255,.11);--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.announcement{height:31px;display:flex;justify-content:center;align-items:center;gap:10px;background:#c7a96b;color:#171711;font-size:9px;letter-spacing:1.8px;font-weight:700}.announcement span{font-size:12px}.site-header{background:rgba(16,17,16,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1000;backdrop-filter:blur(14px)}.brand{font-family:'Manrope',sans-serif;font-size:25px;font-weight:800;letter-spacing:5px;line-height:1;display:inline-flex;flex-direction:column}.brand span{color:var(--gold)}.brand small{font-size:7px;letter-spacing:3.3px;font-weight:500;color:#a4a79f;margin-top:6px}.navbar-nav .nav-link{color:#c5c6c0;font-size:12px;transition:.2s}.navbar-nav .nav-link:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:18px}.icon-btn{border:0;background:none;color:var(--text);font-size:22px}.icon-btn span{font-size:10px;color:var(--gold)}.btn{border-radius:2px;padding:12px 21px;font-size:11px;font-weight:700;letter-spacing:.35px;transition:transform .2s,background .2s,border-color .2s}.btn:hover{transform:translateY(-1px)}.btn-gold{background:var(--gold);color:#171711;border:1px solid var(--gold)}.btn-gold:hover{background:var(--gold2);border-color:var(--gold2);color:#171711}.btn span{margin-left:12px;font-size:15px}.btn-outline-light{border-color:#777b73;color:var(--text)}.btn-outline-light:hover{background:var(--text);color:var(--bg);border-color:var(--text)}.navbar-toggler{border-color:var(--line)}.navbar-toggler-icon{filter:invert(1)}.hero{position:relative;min-height:680px;display:flex;align-items:center;overflow:hidden}.hero-image{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=90');background-size:cover;background-position:center 58%;transform:scale(1.015)}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,10,.97) 0%,rgba(10,11,10,.84) 36%,rgba(10,11,10,.2) 76%,rgba(10,11,10,.18) 100%),linear-gradient(0deg,#101110 0%,transparent 22%)}.hero-content{position:relative;padding-top:85px;padding-bottom:115px}.eyebrow{font-size:9px;letter-spacing:2.4px;color:var(--gold);font-weight:700;margin:0 0 18px}.hero .eyebrow{display:flex;align-items:center;gap:10px}.hero .eyebrow span{height:1px;width:30px;background:var(--gold)}h1,h2,h3{font-family:'Manrope',sans-serif;font-weight:500;letter-spacing:-1.7px;line-height:1.13}h1{font-size:clamp(48px,6vw,78px);max-width:680px;margin:0 0 23px}h1 em,h2 em{font-family:var(--serif);font-weight:400;color:var(--gold2)}.hero-copy{max-width:470px;color:#c0c1bb;font-size:14px;line-height:1.9;margin-bottom:28px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-bottom{display:flex;gap:35px;margin-top:77px}.hero-bottom div{display:flex;flex-direction:column;gap:4px}.hero-bottom strong{font-family:'Manrope';font-size:22px;color:var(--gold);font-weight:500}.hero-bottom span{font-size:10px;color:#c5c6c0}.hero-label{position:absolute;right:25px;bottom:72px;writing-mode:vertical-rl;color:#c6c4bd;font-size:8px;letter-spacing:2px}.search-section{padding-top:88px;padding-bottom:78px}.search-heading,.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.search-heading h2,.section-heading h2,.editorial-copy h2,.sell-inner h2,.contact-inner h2{font-size:clamp(32px,4vw,48px);margin:0}.search-heading>p{max-width:350px;color:var(--muted);font-size:12px;margin:0 0 5px}.search-panel{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:0;border:1px solid var(--line);background:#171917;padding:14px}.search-field{padding:5px 20px;border-right:1px solid var(--line)}.search-field label,.lead-card label,.luxury-modal label{display:block;font-size:10px;color:#b8b9b2;margin-bottom:5px}.search-field input,.search-field select{width:100%;background:transparent;color:var(--text);border:0;outline:0;font-size:12px}.search-field input::placeholder{color:#777b73}.search-field select option,.form-select option{background:#1d201d;color:#fff}.search-submit{align-self:stretch;white-space:nowrap}.section-space{padding:82px 0}.inventory{background:#141614;border-top:1px solid #1e211e;border-bottom:1px solid #1e211e}.section-heading{margin-bottom:30px}.result-count{font-size:11px;color:var(--muted);margin:0 0 7px}.inventory-tools{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:25px}.filter-chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:8px 15px;border:1px solid var(--line);background:transparent;color:#c5c6c0;font-size:10px;cursor:pointer;transition:.2s}.chip:hover,.chip.active{border-color:var(--gold);color:var(--gold);background:rgba(200,169,106,.08)}.sort-wrap{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:10px;white-space:nowrap}.sort-wrap select{background:#1b1d1b;color:var(--text);border:1px solid var(--line);padding:9px 11px;font-size:10px;outline:none}.car-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.car-card{background:#1a1c1a;border:1px solid rgba(255,255,255,.06);transition:transform .25s,border-color .25s;min-width:0}.car-card:hover{transform:translateY(-4px);border-color:rgba(200,169,106,.4)}.car-image-wrap{position:relative;aspect-ratio:1.48;overflow:hidden;background:#242724}.car-image{width:100%;height:100%;object-fit:cover;transition:transform .6s;display:block}.car-card:hover .car-image{transform:scale(1.04)}.car-tag{position:absolute;top:14px;left:14px;padding:6px 9px;background:rgba(16,17,16,.86);color:var(--gold2);font-size:8px;letter-spacing:1.2px;text-transform:uppercase}.favorite-btn{position:absolute;right:13px;top:12px;width:34px;height:34px;border:1px solid rgba(255,255,255,.28);border-radius:50%;background:rgba(16,17,16,.65);color:white;font-size:20px;line-height:1;cursor:pointer}.favorite-btn.active{color:#e3a2a2;border-color:#e3a2a2}.car-info{padding:19px 20px 18px}.car-brand{font-size:9px;color:var(--gold);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:5px}.car-title{font-size:18px;letter-spacing:-.5px;margin:0 0 11px;font-family:'Manrope';font-weight:600}.car-specs{display:flex;flex-wrap:wrap;gap:12px;color:#a4a79f;font-size:10px;padding-bottom:17px;border-bottom:1px solid var(--line)}.car-specs span{display:flex;align-items:center;gap:5px}.car-footer{display:flex;align-items:end;justify-content:space-between;gap:8px;padding-top:16px}.car-price-label{font-size:9px;color:#969991;margin-bottom:2px}.car-price{font-family:'Manrope';font-size:20px;font-weight:600;letter-spacing:-.5px;white-space:nowrap}.car-price small{font-size:10px;color:var(--muted);font-weight:400}.car-open{border:0;background:none;color:var(--gold);font-size:10px;font-weight:700;white-space:nowrap;padding:8px 0 5px}.car-open span{font-size:14px;margin-left:8px}.empty-state{text-align:center;padding:75px 20px;border:1px dashed var(--line)}.empty-state>div{font-size:40px;color:var(--gold)}.empty-state h3{font-size:24px}.empty-state p{color:var(--muted);font-size:12px}.load-more-wrap{text-align:center;margin-top:36px}.load-more-wrap .btn{min-width:240px}.editorial-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:85px;align-items:center}.editorial-photo{position:relative}.editorial-photo img{width:100%;aspect-ratio:4/4.6;object-fit:cover;filter:saturate(.7)}.photo-stamp{position:absolute;bottom:22px;left:22px;border:1px solid rgba(255,255,255,.4);padding:14px 18px;font-size:11px;letter-spacing:3px;background:rgba(16,17,16,.72)}.photo-stamp small{font-size:6px;letter-spacing:2px;color:var(--gold)}.editorial-copy>p:not(.eyebrow){color:var(--muted);font-size:12px;line-height:1.9;margin:22px 0 28px;max-width:470px}.value-list{border-top:1px solid var(--line);margin-bottom:24px}.value-list>div{display:flex;gap:20px;padding:17px 0;border-bottom:1px solid var(--line)}.value-list>div>span{font-size:10px;color:var(--gold);padding-top:3px}.value-list h3{font-family:'Manrope';font-size:13px;letter-spacing:0;font-weight:700;margin:0 0 5px}.value-list p{font-size:10px;color:var(--muted);margin:0}.text-link{font-size:11px;color:var(--gold);font-weight:700}.text-link span{margin-left:10px}.sell-section{background:#c5a568;color:#171711}.sell-inner{display:grid;grid-template-columns:1fr .83fr;gap:90px;align-items:center}.sell-inner .eyebrow{color:#3e3423}.sell-inner h2{font-size:clamp(34px,4vw,48px)}.sell-inner h2 em{color:#fff4d7}.sell-inner>div>p:not(.eyebrow){max-width:430px;color:#3f392e;font-size:12px;line-height:1.9;margin:22px 0 27px}.sell-inner .btn-gold{background:#171711;color:#f5f1e8;border-color:#171711}.sell-inner .btn-gold:hover{background:#33342e}.lead-card{background:#171917;color:var(--text);padding:30px;border:1px solid rgba(255,255,255,.12)}.lead-card h3{font-size:23px;margin:0 0 8px}.lead-card>p{color:var(--muted);font-size:11px;margin-bottom:23px}.form-control,.form-select{background:#202320;border:1px solid #363a35;border-radius:2px;color:var(--text);font-size:11px;padding:12px}.form-control:focus,.form-select:focus{background:#202320;color:var(--text);border-color:var(--gold);box-shadow:0 0 0 .15rem rgba(200,169,106,.15)}.form-control::placeholder{color:#777b73}.lead-card textarea{resize:vertical}.privacy-note{display:block;font-size:9px;color:#888c84;margin-top:12px;line-height:1.5}.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}.contact-inner>div:first-child>p:not(.eyebrow){max-width:440px;color:var(--muted);font-size:12px;line-height:1.9;margin-top:20px}.contact-options{border-top:1px solid var(--line)}.contact-option{display:flex;align-items:center;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}.contact-icon{width:43px;height:43px;display:grid;place-items:center;border:1px solid rgba(200,169,106,.5);color:var(--gold);font-size:19px;flex-shrink:0}.contact-option>span:nth-child(2){display:flex;flex-direction:column;flex:1}.contact-option small{font-size:8px;letter-spacing:1.6px;color:var(--gold)}.contact-option strong{font-size:17px;font-family:'Manrope';font-weight:600}.contact-option em{font-style:normal;font-size:10px;color:var(--muted)}.contact-option>b{font-weight:400;color:var(--gold)}.contact-note{font-size:10px;color:var(--muted);padding-top:18px}.footer{background:#0b0c0b;border-top:1px solid var(--line);padding:45px 0 20px}.footer-main{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-bottom:35px}.footer-main>p{color:var(--muted);font-size:10px;line-height:1.8;margin:0}.footer-links{display:flex;gap:20px;flex-wrap:wrap}.footer-links a{font-size:10px;color:#b8b9b2}.footer-links a:hover{color:var(--gold)}.footer-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:9px;color:#777b73}.footer-bottom b{color:var(--gold)}.floating-contact{position:fixed;z-index:900;right:20px;bottom:20px;display:flex;align-items:center;gap:10px;padding:13px 17px;background:var(--gold);color:#171711;font-size:11px;font-weight:700;box-shadow:0 5px 25px #0006}.floating-contact:hover{background:var(--gold2);color:#171711}.luxury-modal{background:#171917;color:var(--text);border:1px solid #373a34;border-radius:3px}.luxury-modal .modal-header{border-bottom:1px solid var(--line);padding:20px 24px}.luxury-modal .modal-header .eyebrow{margin:0}.luxury-modal .modal-body{padding:24px}.luxury-modal .modal-header h2{font-size:25px;margin:0}.modal-car-image{width:100%;max-height:330px;object-fit:cover;margin-bottom:20px}.modal-car-title{font-size:30px;margin:0 0 6px}.modal-car-price{font-size:24px;color:var(--gold2);font-family:'Manrope';font-weight:700}.modal-description{font-size:12px;color:var(--muted);line-height:1.9;margin:17px 0}.modal-spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.modal-spec{background:#202320;padding:12px}.modal-spec small{display:block;color:var(--muted);font-size:9px}.modal-spec strong{font-size:12px}.custom-toast{background:#252825;color:var(--text);border:1px solid #454a42;border-radius:2px}.custom-toast .toast-body{display:flex;align-items:center;gap:15px;font-size:12px}.muted{color:var(--muted);font-size:12px}.no-scroll{overflow:hidden}
+@media(max-width:991px){.navbar-collapse{padding:20px 0}.nav-actions{margin-top:12px}.hero{min-height:630px}.hero-shade{background:linear-gradient(90deg,rgba(10,11,10,.95),rgba(10,11,10,.63) 65%,rgba(10,11,10,.35)),linear-gradient(0deg,#101110,transparent 24%)}.search-panel{grid-template-columns:1fr 1fr;gap:10px}.search-field{border:1px solid var(--line);padding:12px}.search-submit{min-height:47px}.car-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.editorial-grid{gap:40px}.sell-inner{gap:35px}.contact-inner{gap:45px}.footer-main{flex-wrap:wrap}}
+@media(max-width:640px){.announcement{font-size:7px;letter-spacing:1px}.brand{font-size:22px}.hero{min-height:690px;align-items:flex-start}.hero-content{padding-top:75px;padding-bottom:105px}.hero-image{background-position:61% center}.hero-shade{background:linear-gradient(90deg,rgba(10,11,10,.93),rgba(10,11,10,.62)),linear-gradient(0deg,#101110,transparent 35%)}h1{font-size:49px}.hero-copy{font-size:12px;max-width:340px}.hero-bottom{gap:18px;margin-top:55px}.hero-bottom strong{font-size:18px}.hero-bottom span{font-size:8px;max-width:95px}.hero-label{display:none}.search-section{padding-top:60px;padding-bottom:55px}.search-heading,.section-heading{display:block}.search-heading>p{margin-top:15px}.search-panel{grid-template-columns:1fr;padding:10px}.search-field{padding:12px}.search-submit{width:100%}.section-space{padding:60px 0}.inventory-tools{align-items:flex-start;flex-direction:column}.sort-wrap{width:100%;justify-content:space-between}.sort-wrap select{flex:1;max-width:220px}.car-grid{grid-template-columns:1fr;gap:15px}.car-image-wrap{aspect-ratio:1.5}.car-info{padding:17px}.car-title{font-size:17px}.car-price{font-size:19px}.editorial-grid,.sell-inner,.contact-inner{grid-template-columns:1fr;gap:35px}.editorial-photo img{aspect-ratio:1.15}.editorial-copy h2,.sell-inner h2,.contact-inner h2{font-size:36px}.sell-inner{gap:28px}.lead-card{padding:22px}.footer-main{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}.footer-bottom{flex-direction:column;gap:5px}.floating-contact{right:12px;bottom:12px;padding:12px}.floating-contact span{display:none}.modal-spec-grid{grid-template-columns:repeat(2,1fr)}.modal-car-title{font-size:25px}.luxury-modal .modal-body{padding:18px}.luxury-modal .modal-header{padding:17px 18px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Refinamento visual: menos ruído, acento azul frio e componentes Bootstrap */
+:root{--bg:#101319;--panel:#171c24;--panel2:#202733;--text:#f2f5f9;--muted:#a4adba;--gold:#8eafd8;--gold2:#c3d7ef;--line:rgba(220,232,247,.12);--bs-primary:#7199c9;--bs-primary-rgb:113,153,201}
+.announcement{display:none}
+.brand span,.navbar-nav .nav-link:hover,.icon-btn span,.eyebrow,.hero .eyebrow span,h1 em,h2 em,.hero-bottom strong,.chip:hover,.chip.active,.car-tag,.car-brand,.car-open,.empty-state>div,.value-list>div>span,.text-link,.photo-stamp small,.sell-inner .eyebrow,.contact-option small,.contact-option>b,.footer-links a:hover,.footer-bottom b,.modal-car-price{color:var(--gold)}
+.brand span{color:var(--gold)}
+.btn-primary{--bs-btn-bg:#7298c6;--bs-btn-border-color:#7298c6;--bs-btn-color:#10151d;--bs-btn-hover-bg:#8aadd8;--bs-btn-hover-border-color:#8aadd8;--bs-btn-hover-color:#10151d;--bs-btn-active-bg:#6288b7;--bs-btn-active-border-color:#6288b7;border-radius:.45rem;font-weight:600}
+.btn-outline-light{border-radius:.45rem}
+.btn{padding:11px 18px;font-size:13px;letter-spacing:0}
+.site-header{background:rgba(16,19,25,.96)}
+.hero{min-height:590px}
+.hero-content{padding-top:70px;padding-bottom:75px}
+.hero-shade{background:linear-gradient(90deg,rgba(10,13,19,.96) 0%,rgba(10,13,19,.82) 38%,rgba(10,13,19,.18) 100%),linear-gradient(0deg,var(--bg),transparent 22%)}
+.hero-copy{font-size:15px;max-width:430px}
+.search-section{padding-top:60px;padding-bottom:60px}
+.search-heading,.section-heading{margin-bottom:24px}
+.search-panel{border-radius:12px;gap:12px;padding:16px;background:var(--panel);border-color:var(--line)}
+.search-field{border:0;padding:8px 12px;min-width:0}
+.search-field label{font-size:12px}
+.search-field input,.search-field select{font-size:14px}
+.search-field input:focus,.search-field select:focus{outline:0}
+.inventory{background:#131720}
+.inventory-tools{margin-bottom:20px}
+.chip{border-radius:999px;padding:8px 15px;font-size:12px}
+.chip:hover,.chip.active{border-color:var(--gold);background:rgba(113,153,201,.12);color:var(--gold)}
+.sort-wrap{font-size:12px}
+.sort-wrap select{border-radius:.4rem;font-size:12px}
+.car-grid{gap:18px}
+.car-card{border-radius:12px;overflow:hidden;background:#1a202b;border:1px solid rgba(220,232,247,.09)}
+.car-card:hover{border-color:rgba(142,175,216,.45)}
+.car-image-wrap{aspect-ratio:1.55}
+.car-tag{border-radius:5px;color:#d8e8fb;background:rgba(15,21,31,.88);font-size:10px}
+.favorite-btn{display:grid;place-items:center;border-radius:50%;backdrop-filter:blur(8px)}
+.car-info{padding:18px 19px 17px}
+.car-brand{font-size:10px;letter-spacing:1.2px}
+.car-title{font-size:19px}
+.car-specs{font-size:12px;gap:10px}
+.car-price-label{font-size:11px}
+.car-price{font-size:21px}
+.car-open{font-size:12px}
+.section-space{padding:68px 0}
+.editorial-grid{gap:60px}
+.editorial-photo img{border-radius:12px;filter:saturate(.72)}
+.photo-stamp{border-radius:8px}
+.value-list h3{font-size:14px}
+.value-list p{font-size:12px}
+.sell-section{background:linear-gradient(135deg,#171e29,#11151d);color:var(--text);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sell-inner .eyebrow{color:var(--gold)}
+.sell-inner h2 em{color:var(--gold2)}
+.sell-inner>div>p:not(.eyebrow){color:var(--muted);font-size:14px}
+.sell-inner .btn-primary{background:#7298c6;color:#10151d;border-color:#7298c6}
+.lead-card{border-radius:12px;background:#111720;border-color:var(--line);padding:26px}
+.lead-card h3{font-size:22px;letter-spacing:-.6px}
+.lead-card>p{font-size:13px}
+.form-control,.form-select{border-radius:.45rem;font-size:13px;padding:11px 12px;background:#1a222e;border-color:#343f4f}
+.form-control:focus,.form-select:focus{border-color:var(--gold);box-shadow:0 0 0 .2rem rgba(113,153,201,.18)}
+.contact-inner{gap:65px}
+.contact-inner>div:first-child>p:not(.eyebrow){font-size:14px}
+.contact-option{padding:18px 0}
+.contact-icon{border-radius:10px;border-color:rgba(142,175,216,.45);background:rgba(113,153,201,.08)}
+.contact-option em{font-size:12px}
+.footer{background:#0b0e13}
+.floating-contact{background:#7298c6;color:#10151d;border-radius:999px;padding:13px 18px}
+.floating-contact:hover{background:#8aadd8;color:#10151d}
+.luxury-modal{border-radius:14px;background:#171e29}
+.luxury-modal .modal-header{padding:20px 24px}
+.modal-spec{border-radius:8px;background:#202a38}
+.custom-toast{border-radius:10px}
+@media(max-width:991px){.hero{min-height:540px}.search-panel{grid-template-columns:1fr 1fr}.search-field{border:1px solid var(--line);border-radius:8px;padding:12px}.search-submit{min-height:46px}.car-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.hero{min-height:580px}.hero-content{padding-top:65px;padding-bottom:65px}h1{font-size:clamp(42px,12vw,54px)}.hero-copy{font-size:14px}.search-section{padding-top:44px;padding-bottom:44px}.search-panel{grid-template-columns:1fr;padding:12px}.search-field{padding:10px}.section-space{padding:50px 0}.car-grid{grid-template-columns:1fr}.car-info{padding:16px}.sell-inner{gap:25px}.lead-card{padding:20px}.floating-contact{right:14px;bottom:14px}.footer-main{gap:18px}}
+
+
+/* ===== HERO EM VÍDEO + PALETA AZUL FRIO ===== */
+.hero { isolation: isolate; }
+.hero-video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 55%; z-index: -2;
+  background: #10141b;
+}
+.hero-image { display: none; }
+.hero-shade {
+  z-index: -1;
+  background: linear-gradient(90deg,rgba(9,13,20,.96) 0%,rgba(9,13,20,.78) 40%,rgba(9,13,20,.25) 100%),
+              linear-gradient(0deg,#10141b 0%,transparent 24%);
+}
+.hero-video-controls {
+  position: absolute; right: 24px; bottom: 24px; z-index: 2;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.video-sound-btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px;
+  color: #f4f7fb; background: rgba(18,25,35,.45);
+  border: 1px solid rgba(220,235,255,.42); border-radius: 8px;
+  backdrop-filter: blur(12px); cursor: pointer; font-size: 12px;
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
+}
+.video-sound-btn:hover { background: rgba(142,184,232,.20); border-color: #c0dcff; transform: translateY(-2px); }
+.video-credit { color: rgba(244,247,251,.72); font-size: 10px; text-shadow: 0 1px 4px #000; }
+.video-credit:hover { color: #fff; }
+/* Mantém as seções coerentes com o tema escuro e remove o antigo bloco dourado */
+.sell-section { color: var(--text); background: linear-gradient(135deg,#192433,#111720); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sell-section .eyebrow { color: var(--accent); }
+.sell-section h2, .sell-section h2 em { color: #f5f7fb; }
+.sell-section h2 em { color: var(--accent); }
+.sell-section > .sell-inner > div > p:not(.eyebrow) { color: #c4cedb; }
+.sell-inner .btn-gold { color: #e8f2ff; background: rgba(142,184,232,.10); border-color: rgba(142,184,232,.48); }
+.sell-inner .btn-gold:hover { color: #fff; background: rgba(142,184,232,.22); border-color: #c0dcff; }
+.form-control:focus, .form-select:focus { border-color: var(--accent); box-shadow: 0 0 0 .2rem rgba(142,184,232,.16); }
+.chip:hover, .chip.active { border-color: var(--accent); color: var(--accent); background: rgba(142,184,232,.08); }
+.car-card:hover { border-color: rgba(142,184,232,.4); }
+.floating-contact { color: #f2f7ff; background: rgba(42,66,94,.78); border: 1px solid rgba(142,184,232,.5); border-radius: 40px; backdrop-filter: blur(12px); }
+.floating-contact:hover { color: #fff; background: rgba(67,103,146,.92); }
+@media (max-width: 640px) {
+  .hero-video { object-position: 58% center; }
+  .hero-video-controls { left: 16px; right: 16px; bottom: 16px; justify-content: space-between; }
+  .video-credit { max-width: 48%; text-align: right; }
+}
+@media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+
+/* HERO VIDEO — vídeo sempre visível e sem botão de som */
+.hero { position: relative; isolation: isolate; background: #10141b; }
+.hero-video {
+  position: absolute !important; inset: 0; display: block !important;
+  width: 100%; height: 100%; object-fit: cover; object-position: center 52%;
+  z-index: 0 !important; opacity: 1; background: #10141b;
+}
+.hero-shade { z-index: 1 !important; pointer-events: none; }
+.hero-content { position: relative; z-index: 2; }
+.hero-video-controls {
+  position: absolute; right: 24px; bottom: 22px; left: 24px; z-index: 3;
+  display: flex; justify-content: space-between; align-items: end; gap: 12px;
+  pointer-events: none;
+}
+.hero-sound-hint {
+  max-width: 70%; color: rgba(244,247,251,.8); font-size: 9px;
+  letter-spacing: 1.5px; text-shadow: 0 2px 8px #000;
+}
+.video-credit { pointer-events: auto; color: rgba(244,247,251,.72); font-size: 10px; text-shadow: 0 1px 5px #000; }
+.video-credit:hover { color: #fff; }
+@media(max-width:640px) {
+  .hero-video { object-position: 58% center; }
+  .hero-video-controls { left: 16px; right: 16px; bottom: 14px; align-items: start; flex-direction: column; }
+  .hero-sound-hint { font-size: 8px; }
+}
+
+
+/* VÉLOUR — pista de corrida no hero */
+.hero { overflow: hidden; background: #10141b; }
+.hero-video { object-fit: cover !important; object-position: center 54% !important; filter: saturate(1.08) contrast(1.04); }
+.hero-shade { background: linear-gradient(90deg, rgba(8,12,19,.88) 0%, rgba(8,12,19,.62) 42%, rgba(8,12,19,.16) 100%), linear-gradient(0deg, #10141b 0%, transparent 25%) !important; }
+.hero-sound-hint { text-transform: uppercase; }
+@media (max-width: 640px) { .hero-video { object-position: 55% center !important; } }
+
+
+/* ===== VÉLOUR CLEAN EDITION — porcelana, grafite e prata fria ===== */
+:root {
+  --bg: #f5f6f7; --panel: #ffffff; --panel2: #eef0f2;
+  --text: #20242a; --muted: #737b85; --gold: #536579; --gold2: #283746;
+  --accent: #536579; --accent-hover: #283746; --line: rgba(32,36,42,.12);
+}
+body { background: #f5f6f7; color: #20242a; }
+.site-header { background: rgba(250,251,252,.94); border-bottom-color: rgba(32,36,42,.1); }
+.brand, .brand span { color: #20242a; }
+.brand small, .navbar-nav .nav-link { color: #68717c; }
+.navbar-nav .nav-link:hover, .icon-btn span { color: #536579; }
+.icon-btn { color: #20242a; }
+.navbar-toggler { border-color: rgba(32,36,42,.2); }
+.navbar-toggler-icon { filter: none; }
+.btn-primary, .btn-gold { color: #fff !important; background: #344555 !important; border-color: #344555 !important; }
+.btn-primary:hover, .btn-gold:hover { color: #fff !important; background: #202c37 !important; border-color: #202c37 !important; }
+.btn-outline-light { color: #fff; border-color: rgba(255,255,255,.72); }
+.eyebrow, .hero .eyebrow span, h1 em, h2 em, .hero-bottom div strong, .chip:hover, .chip.active, .car-brand, .car-open, .value-list>div>span, .text-link, .photo-stamp small { color: #536579; }
+.hero { background: #161b20; }
+.hero-video-frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 0; pointer-events: none; }
+.hero-shade { z-index: 1 !important; background: linear-gradient(90deg,rgba(12,16,20,.83) 0%,rgba(12,16,20,.58) 42%,rgba(12,16,20,.12) 100%),linear-gradient(0deg,#f5f6f7 0%,transparent 17%) !important; }
+.hero-content { z-index: 2; color: #fff; }
+.hero-content .eyebrow, .hero-content h1 em { color: #d5dde5; }
+.hero-copy { color: rgba(255,255,255,.82); }
+.hero-video-controls { z-index: 3; }
+.hero-sound-hint, .video-credit { color: rgba(255,255,255,.84); }
+.search-section { background: #f5f6f7; }
+.search-panel, .lead-card, .luxury-modal { background: #fff; color: #20242a; border-color: rgba(32,36,42,.12); box-shadow: 0 10px 35px rgba(28,38,48,.045); }
+.search-field label, .lead-card label, .luxury-modal label { color: #59636e; }
+.search-field input, .search-field select { color: #20242a; }
+.search-field input::placeholder, .form-control::placeholder { color: #929aa3; }
+.search-field select option, .form-select option { background: #fff; color: #20242a; }
+.inventory { background: #edf0f2; border-color: #e1e5e8; }
+.car-card { background: #fff; border-color: rgba(32,36,42,.1); box-shadow: 0 8px 24px rgba(25,35,45,.035); }
+.car-specs, .result-count, .sort-wrap, .empty-state p, .editorial-copy>p:not(.eyebrow), .value-list p, .car-price-label { color: #737b85; }
+.car-title, .car-price, .value-list h3 { color: #20242a; }
+.car-tag { background: rgba(255,255,255,.93); color: #344555; }
+.favorite-btn { background: rgba(20,26,32,.68); }
+.chip { color: #59636e; border-color: rgba(32,36,42,.16); }
+.chip:hover, .chip.active { border-color: #536579; color: #344555; background: rgba(83,101,121,.08); }
+.sort-wrap select, .form-control, .form-select { background: #f8f9fa; color: #20242a; border-color: #d9dee3; }
+.form-control:focus, .form-select:focus { background: #fff; color: #20242a; border-color: #536579; box-shadow: 0 0 0 .2rem rgba(83,101,121,.13); }
+.sell-section { color: #20242a; background: #e7ebef; border-color: #dce1e6; }
+.sell-section .eyebrow { color: #536579; }
+.sell-section h2, .sell-section h2 em { color: #20242a; }
+.sell-section> .sell-inner>div>p:not(.eyebrow) { color: #59636e; }
+.lead-card>p, .privacy-note { color: #737b85; }
+.contact-option, .footer { color: #20242a; }
+.contact-icon { border-color: rgba(83,101,121,.3); background: rgba(83,101,121,.07); }
+.footer { background: #e9ecef; border-top: 1px solid #dce1e6; }
+.footer .brand, .footer-main p, .footer-links a, .footer-bottom { color: #65707b; }
+.footer .brand { color: #20242a; }
+.floating-contact { color: #fff; background: #344555; border-color: #344555; }
+.floating-contact:hover { color: #fff; background: #202c37; }
+.modal-spec { background: #f0f2f4; }
+@media (max-width: 991px) { .hero-video-frame { width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; left: 50%; top: 50%; transform: translate(-50%,-50%); } }
+@media (max-width: 640px) { .hero-video-frame { width: 177.78vh; height: 100%; min-height: 100%; } .hero-shade { background: linear-gradient(90deg,rgba(12,16,20,.78),rgba(12,16,20,.32)),linear-gradient(0deg,#f5f6f7 0%,transparent 15%) !important; } }
+
+/* Hero stock-video: arquivo MP4 direto, sem interface de plataforma externa. */
+.hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 54%; z-index:0; filter:saturate(.82) contrast(1.04); }
+.hero-video-frame { display:none !important; }
+.hero-video-controls { z-index:3; }
+.video-credit { pointer-events:none; }
+@media (max-width: 640px) { .hero-video { object-position:58% center; } }
+
+
+/* Ajustes finais — VÉLOUR Noir: header alinhado e CTA transparente */
+:root {
+  --bg: #090c10;
+  --panel: #11171e;
+  --panel2: #171e26;
+  --text: #f3f4f5;
+  --muted: #a3acb6;
+  --gold: #d6b574;
+  --gold2: #ead3a0;
+  --accent: #d6b574;
+  --accent-hover: #ead3a0;
+  --line: rgba(255,255,255,.12);
+}
+body { background: var(--bg); color: var(--text); }
+.site-header { background: rgba(9,12,16,.96) !important; border-bottom: 1px solid rgba(214,181,116,.18) !important; }
+.site-header .navbar { display:flex; align-items:center; gap:clamp(24px,3vw,48px); min-height:82px; }
+.site-header .navbar-brand { flex:0 0 auto; margin-right:0; color:#f3f4f5 !important; white-space:nowrap; }
+.site-header .brand { display:inline-flex; flex-direction:column; font-size:25px; letter-spacing:5px; line-height:1; }
+.site-header .brand span { color:var(--gold) !important; }
+.site-header .brand small { color:#9da6b0 !important; margin-top:7px; font-size:7px; letter-spacing:3.2px; }
+.site-header .navbar-collapse { align-items:center; min-width:0; }
+.site-header .navbar-nav { align-items:center; gap:clamp(14px,1.7vw,28px) !important; flex-wrap:nowrap; }
+.site-header .navbar-nav .nav-link { color:#c5cbd2 !important; padding:.6rem 0; font-size:12px; white-space:nowrap; letter-spacing:.1px; }
+.site-header .navbar-nav .nav-link:hover, .site-header .navbar-nav .nav-link:focus { color:var(--gold) !important; }
+.site-header .nav-actions { display:flex; align-items:center; justify-content:flex-end; gap:15px; margin-left:clamp(20px,2.5vw,40px); flex:0 0 auto; }
+.site-header .btn-attendance { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:40px; padding:10px 15px; border:1px solid rgba(214,181,116,.72); border-radius:3px; background:transparent !important; color:#e8d4a8 !important; font-size:10px; font-weight:600; letter-spacing:.45px; white-space:nowrap; transition:background .22s ease,color .22s ease,border-color .22s ease,transform .22s ease; }
+.site-header .btn-attendance span { margin:0; color:inherit; font-size:14px; }
+.site-header .btn-attendance:hover, .site-header .btn-attendance:focus-visible { background:var(--gold) !important; color:#101114 !important; border-color:var(--gold) !important; transform:translateY(-1px); }
+.site-header .icon-btn { display:flex; align-items:center; gap:5px; padding:5px 0 5px 3px; color:#f3f4f5 !important; line-height:1; }
+.site-header .icon-btn span { color:var(--gold) !important; }
+.hero-copy { display:none !important; }
+.hero-content { max-width:1320px; padding-top:80px; padding-bottom:88px; }
+.hero-content h1 { margin-bottom:30px; }
+.hero-buttons { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:0; }
+.hero-video-controls { left:max(24px,calc((100vw - 1320px)/2)); right:max(24px,calc((100vw - 1320px)/2)); }
+@media (max-width: 1199px) and (min-width: 992px) {
+  .site-header .navbar { gap:22px; }
+  .site-header .navbar-nav { gap:14px !important; }
+  .site-header .navbar-nav .nav-link { font-size:11px; }
+  .site-header .nav-actions { gap:10px; margin-left:16px; }
+  .site-header .btn-attendance { padding:9px 11px; font-size:9px; }
+}
+@media (max-width: 991px) {
+  .site-header .navbar { min-height:72px; flex-wrap:wrap; gap:12px; }
+  .site-header .navbar-toggler { margin-left:auto; border:1px solid rgba(214,181,116,.45); padding:7px 9px; }
+  .site-header .navbar-toggler-icon { filter:invert(1); }
+  .site-header .navbar-collapse { flex-basis:100%; padding:18px 0 8px; }
+  .site-header .navbar-nav { align-items:stretch; gap:4px !important; }
+  .site-header .navbar-nav .nav-link { padding:11px 2px; border-bottom:1px solid rgba(255,255,255,.06); font-size:13px; }
+  .site-header .nav-actions { justify-content:flex-start; margin:16px 0 0; gap:18px; }
+  .site-header .btn-attendance { padding:11px 15px; }
+}
+@media (max-width: 640px) {
+  .site-header .brand { font-size:22px; letter-spacing:4px; }
+  .hero-content { padding-top:62px; padding-bottom:72px; }
+  .hero-content h1 { margin-bottom:25px; }
+  .hero-buttons { gap:10px; }
+  .hero-buttons .btn { padding:11px 14px; }
+  .hero-video-controls { left:16px; right:16px; }
+}
+
+
+/* Ajustes de acabamento: wordmark horizontal, favoritos antes do atendimento e catálogo demonstrativo. */
+.site-header .brand { flex-direction:column; align-items:flex-start; }
+.site-header .brand-name, .footer .brand-name { display:inline-block; white-space:nowrap; color:#f3f4f5 !important; line-height:1; }
+.site-header .brand-name .brand-accent, .footer .brand-name .brand-accent { display:inline; color:var(--gold) !important; }
+.site-header .nav-actions { gap:clamp(14px,1.5vw,22px); }
+.site-header .icon-btn { order:0; padding:7px 2px; min-width:35px; justify-content:center; }
+.site-header .btn-attendance { order:1; }
+.site-header .icon-btn:hover { color:var(--gold) !important; transform:translateY(-1px); }
+.site-header .btn-attendance { background:transparent !important; color:#e8d4a8 !important; }
+.site-header .btn-attendance:hover, .site-header .btn-attendance:focus-visible { background:var(--gold) !important; color:#101114 !important; }
+.car-card { display:flex; flex-direction:column; height:100%; }
+.car-info { display:flex; flex-direction:column; flex:1; }
+.car-footer { margin-top:auto; }
+@media (max-width:991px) { .site-header .nav-actions { flex-direction:row; align-items:center; } }
+
+
+/* Correção final: modo escuro consistente, dourado premium e fallback sem foto enganosa */
+:root {
+  color-scheme: dark;
+  --bg: #0a0b0d; --panel: #121417; --panel2: #1b1e22;
+  --text: #f4f1eb; --muted: #aaa69e; --gold: #c9a45c; --gold2: #e2c783;
+  --line: rgba(201,164,92,.18); --bs-primary: #c9a45c; --bs-primary-rgb: 201,164,92;
+  --bs-body-bg: #0a0b0d; --bs-body-color: #f4f1eb;
+}
+body { background: var(--bg); color: var(--text); }
+.site-header { background: rgba(10,11,13,.96); border-bottom: 1px solid rgba(201,164,92,.12); }
+.brand .brand-accent, .brand span, .navbar-nav .nav-link:hover, .icon-btn span, .eyebrow, h1 em, h2 em, .car-brand, .car-open, .car-tag, .modal-car-price, .footer-bottom b { color: var(--gold) !important; }
+.btn-primary { --bs-btn-bg: #c9a45c; --bs-btn-border-color: #c9a45c; --bs-btn-color: #11100d; --bs-btn-hover-bg: #e2c783; --bs-btn-hover-border-color: #e2c783; --bs-btn-hover-color: #11100d; --bs-btn-active-bg: #b38e49; --bs-btn-active-border-color: #b38e49; }
+.btn-attendance { color: var(--gold) !important; border: 1px solid rgba(201,164,92,.62) !important; background: transparent !important; transition: background .22s ease, color .22s ease, border-color .22s ease; }
+.btn-attendance:hover, .btn-attendance:focus-visible { background: var(--gold) !important; border-color: var(--gold) !important; color: #11100d !important; }
+.hero-shade { background: linear-gradient(90deg,rgba(8,9,11,.96) 0%,rgba(8,9,11,.78) 40%,rgba(8,9,11,.22) 100%), linear-gradient(0deg,#0a0b0d 0%,transparent 24%) !important; }
+.search-panel, .car-card, .lead-card { background: #121417; border-color: rgba(201,164,92,.15); }
+.inventory { background: #0e1012; }
+.sell-section { background: linear-gradient(135deg,#171512,#0e1012); border-color: rgba(201,164,92,.15); }
+.form-control, .form-select, .search-field input, .search-field select, .sort-wrap select { background-color: #17191c; color: var(--text); border-color: #34302a; }
+.form-control::placeholder, .search-field input::placeholder { color: #8f8a81; }
+.form-control:focus, .form-select:focus { border-color: var(--gold); box-shadow: 0 0 0 .2rem rgba(201,164,92,.16); }
+.chip:hover, .chip.active { border-color: var(--gold); background: rgba(201,164,92,.1); color: var(--gold); }
+.car-card:hover { border-color: rgba(201,164,92,.48); }
+.car-image-wrap { background: #191b1e; }
+.car-image.image-unavailable { display: none; }
+.car-image-wrap:has(.image-unavailable)::after { content: 'IMAGEM INDISPONÍVEL'; position: absolute; inset: 0; display: grid; place-items: center; color: #9d8b68; font-size: 10px; letter-spacing: .16em; background: linear-gradient(135deg,#17191c,#0e1012); }
+.footer { background: #070809; }
+.floating-contact { background: var(--gold); color: #11100d; }
+.floating-contact:hover { background: var(--gold2); color: #11100d; }
+.luxury-modal { background: #121417; }
+.modal-spec { background: #1b1e22; }
+@media (prefers-color-scheme: light) { html { color-scheme: dark; } }
+
+
+/* ===== VÉLOUR FINAL POLISH — dark surfaces + readable contrast ===== */
+:root {
+  color-scheme: dark;
+  --bg: #090a0c;
+  --panel: #111316;
+  --panel2: #191c20;
+  --text: #f5f3ee;
+  --muted: #b4b0a8;
+  --gold: #d0ad68;
+  --gold2: #e6cb91;
+  --line: rgba(208,173,104,.20);
+}
+html, body { background: #090a0c !important; color: #f5f3ee !important; }
+body, main, section, header, footer { color: var(--text); }
+.site-header { background: rgba(9,10,12,.97) !important; border-color: rgba(208,173,104,.18) !important; }
+.search-section, .inventory, .editorial, .contact-section { background: #0d0f11 !important; color: var(--text) !important; }
+.sell-section { background: linear-gradient(135deg,#171614 0%,#0d0f11 78%) !important; color: var(--text) !important; }
+.footer { background: #070809 !important; color: var(--text) !important; border-top: 1px solid var(--line) !important; }
+.search-heading h2, .section-heading h2, .editorial-copy h2, .sell-inner h2, .contact-inner h2,
+.search-heading h2 em, .section-heading h2 em, .editorial-copy h2 em, .sell-inner h2 em, .contact-inner h2 em { color: var(--text) !important; }
+h1 em, h2 em, .eyebrow, .brand .brand-accent, .site-header .brand span, .footer .brand span,
+.car-brand, .car-open, .modal-car-price, .value-list > div > span, .text-link, .contact-option small,
+.contact-option > b, .footer-bottom b, .icon-btn span { color: var(--gold) !important; }
+.site-header .brand-name, .footer .brand-name { color: #f5f3ee !important; }
+.site-header .brand small, .navbar-nav .nav-link { color: #d0cec8 !important; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus { color: var(--gold2) !important; }
+.search-heading > p, .section-heading > p, .result-count, .editorial-copy > p:not(.eyebrow), .value-list p,
+.sell-inner > div > p:not(.eyebrow), .contact-inner > div > p:not(.eyebrow), .lead-card > p,
+.car-specs, .car-price-label, .privacy-note, .footer-main > p, .footer-links a, .footer-bottom { color: #b4b0a8 !important; }
+.search-panel, .lead-card, .car-card, .luxury-modal, .custom-toast { background: #121417 !important; color: var(--text) !important; border-color: rgba(208,173,104,.17) !important; }
+.car-card { box-shadow: 0 14px 35px rgba(0,0,0,.22) !important; }
+.car-card:hover { border-color: rgba(208,173,104,.55) !important; transform: translateY(-3px); }
+.car-title, .car-price, .value-list h3, .lead-card h3, .modal-car-title, .contact-option strong { color: #f5f3ee !important; }
+.car-tag { background: rgba(10,11,12,.88) !important; color: var(--gold2) !important; border: 1px solid rgba(208,173,104,.25); }
+.chip { color: #d3d0c9 !important; background: #141619 !important; border-color: #33302a !important; }
+.chip:hover, .chip.active { color: var(--gold2) !important; background: rgba(208,173,104,.10) !important; border-color: var(--gold) !important; }
+.sort-wrap, .sort-wrap label, .search-field label, .lead-card label, .luxury-modal label { color: #dedbd4 !important; }
+.form-control, .form-select, .search-field input, .search-field select, .sort-wrap select, textarea.form-control {
+  color: #f5f3ee !important; background-color: #1a1c1f !important; border-color: #39362f !important;
+}
+.form-control::placeholder, .search-field input::placeholder, textarea::placeholder { color: #a09b91 !important; opacity: 1; }
+.form-control:focus, .form-select:focus, .search-field input:focus, .search-field select:focus, .sort-wrap select:focus {
+  color: #fff !important; background-color: #1c1e21 !important; border-color: var(--gold) !important; box-shadow: 0 0 0 .2rem rgba(208,173,104,.17) !important;
+}
+.form-select option, .search-field select option, .sort-wrap select option { background: #17191c !important; color: #f5f3ee !important; }
+.btn-primary { --bs-btn-bg: #d0ad68; --bs-btn-border-color: #d0ad68; --bs-btn-color: #15120c; --bs-btn-hover-bg: #e6cb91; --bs-btn-hover-border-color: #e6cb91; --bs-btn-hover-color: #15120c; background: #d0ad68 !important; border-color: #d0ad68 !important; color: #15120c !important; font-weight: 700; }
+.btn-primary:hover, .btn-primary:focus-visible { background: #e6cb91 !important; border-color: #e6cb91 !important; color: #15120c !important; }
+.btn-outline-light { color: #f5f3ee !important; border-color: rgba(245,243,238,.55) !important; background: rgba(10,11,12,.18); }
+.btn-outline-light:hover, .btn-outline-light:focus-visible { color: #111 !important; background: #f5f3ee !important; border-color: #f5f3ee !important; }
+.site-header .btn-attendance { color: var(--gold2) !important; background: transparent !important; border-color: rgba(208,173,104,.7) !important; }
+.site-header .btn-attendance:hover, .site-header .btn-attendance:focus-visible { color: #111 !important; background: var(--gold) !important; border-color: var(--gold) !important; }
+.favorite-btn { color: #f5f3ee !important; background: rgba(9,10,12,.86) !important; border: 1px solid rgba(245,243,238,.18) !important; }
+.favorite-btn.active, .favorite-btn:hover { color: var(--gold2) !important; border-color: var(--gold) !important; }
+.contact-option { color: var(--text) !important; border-color: rgba(208,173,104,.18) !important; background: #121417 !important; }
+.contact-option:hover { border-color: rgba(208,173,104,.55) !important; background: #17191c !important; }
+.contact-icon { color: var(--gold2) !important; background: rgba(208,173,104,.08) !important; border-color: rgba(208,173,104,.35) !important; }
+.photo-stamp { color: #fff !important; background: rgba(9,10,12,.78) !important; border-color: rgba(208,173,104,.45) !important; }
+.floating-contact { color: #15120c !important; background: var(--gold) !important; border: 1px solid var(--gold) !important; }
+.floating-contact:hover { color: #15120c !important; background: var(--gold2) !important; border-color: var(--gold2) !important; }
+.luxury-modal .modal-header, .luxury-modal .modal-footer { border-color: rgba(208,173,104,.17) !important; }
+.luxury-modal .btn-close { filter: invert(1) grayscale(1); opacity: .8; }
+.modal-spec { background: #1a1c1f !important; border: 1px solid rgba(255,255,255,.045); }
+.modal-spec small { color: #b4b0a8 !important; }
+.modal-spec strong { color: #f5f3ee !important; }
+.empty-state { color: #f5f3ee !important; }
+.empty-state p { color: #b4b0a8 !important; }
+::selection { color: #111; background: var(--gold2); }
+:focus-visible { outline: 2px solid var(--gold2) !important; outline-offset: 3px; }
+/* Imagens: recorte uniforme e fallback legível quando uma origem externa falha. */
+.car-image-wrap { position: relative; overflow: hidden; background: linear-gradient(135deg,#1c1e21,#0d0f11) !important; }
+.car-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.car-image.image-unavailable { display: none !important; }
+.car-image-wrap:has(.car-image.image-unavailable)::after { content: attr(data-fallback); position: absolute; inset: 0; display: grid; place-items: center; padding: 22px; text-align: center; color: #cdb987; background: radial-gradient(ellipse at 50% 35%,#292720 0%,#171819 45%,#0d0f11 100%); font: 600 13px/1.5 'Manrope',sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.modal-image-wrap { position: relative; margin-bottom: 18px; overflow: hidden; border-radius: 8px; background: linear-gradient(135deg,#1c1e21,#0d0f11); }
+.modal-image-wrap .modal-car-image { display: block; width: 100%; max-height: 360px; object-fit: cover; }
+.modal-image-wrap .modal-car-image.image-unavailable { display: none !important; }
+.modal-image-wrap:has(.modal-car-image.image-unavailable)::after { content: attr(data-fallback); display: grid; place-items: center; min-height: 210px; padding: 22px; text-align: center; color: #cdb987; background: radial-gradient(ellipse at 50% 35%,#292720 0%,#171819 45%,#0d0f11 100%); font: 600 15px/1.5 'Manrope',sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+@media (max-width: 640px) {
+  .search-heading h2, .section-heading h2, .editorial-copy h2, .sell-inner h2, .contact-inner h2 { color: #f5f3ee !important; }
+  .search-panel, .lead-card { padding: 16px !important; }
+  .car-image-wrap { aspect-ratio: 1.45; }
+  .hero-shade { background: linear-gradient(90deg,rgba(8,9,11,.88),rgba(8,9,11,.42)),linear-gradient(0deg,#090a0c 0%,transparent 24%) !important; }
+}
+
+/* VÉLOUR 2.0: filtros, consentimento e responsividade aprimorados */
+.advanced-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;align-items:end;gap:12px;margin-bottom:26px;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.advanced-filters label{color:var(--muted);font-size:12px;display:grid;gap:8px}
+.advanced-filters input,.advanced-filters select{min-width:0;width:100%;padding:11px;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:7px}
+.consent-line{display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:12px;line-height:1.55;margin-top:15px}
+.consent-line input{margin-top:3px;flex-shrink:0}.consent-line a{color:var(--gold);text-decoration:underline}
+.car-open{text-decoration:none;white-space:normal;text-align:right;display:inline-block}
+@media(max-width:991px){.advanced-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.advanced-filters button{grid-column:1/-1}}
+@media(max-width:640px){.advanced-filters{grid-template-columns:1fr}.advanced-filters button{grid-column:auto}}
+
+/* VÉLOUR 2.3: busca compacta e coerente com o design system */
+.search-section{padding-top:58px;padding-bottom:56px}
+.search-heading{margin-bottom:22px}
+.search-heading h2{font-size:clamp(27px,3vw,38px)}
+.search-panel{max-width:1080px;margin-inline:auto;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr) minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px;border-radius:10px}
+.search-field{min-width:0;padding:5px 12px;border-right:1px solid var(--line)}
+.search-field label{font-size:11px;margin-bottom:7px}
+.search-field input,.search-field select{font-size:13px;min-height:26px}
+.search-submit{min-height:44px!important;align-self:center;white-space:nowrap!important;padding:10px 16px!important;font-size:13px!important}
+.car-card.is-sold{border-color:rgba(255,255,255,.12)}
+.car-card.is-sold:hover{transform:none}
+.car-image-wrap.sold-image{background:linear-gradient(135deg,#272b2c,#121514);display:flex;justify-content:center;align-items:center}
+.car-image-wrap.sold-image::after{content:'VENDIDO';font-family:Manrope,sans-serif;font-size:clamp(22px,3vw,36px);font-weight:800;letter-spacing:.26em;color:#e2e3df;opacity:.86}
+.car-image-wrap.sold-image .car-image{display:none}
+.car-card.is-sold .car-tag{color:#fff;background:#565c5a}
+.car-card.is-sold .car-price{font-size:17px;color:#d2d6d1}
+.car-card.is-sold .car-specs{padding-bottom:12px}
+.sold-note{font-size:11px;color:var(--muted);margin:12px 0 0;line-height:1.6}
+.sold-message{font-size:11px;font-weight:600;color:#c4c7c1;max-width:150px;text-align:right}
+@media(max-width:900px){.search-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.search-submit{width:100%;grid-column:1/-1}.search-field:nth-child(2){border-right:0}}
+@media(max-width:540px){.search-section{padding-top:43px;padding-bottom:42px}.search-panel{grid-template-columns:1fr;padding:12px;gap:9px}.search-field{border-right:0!important;border-bottom:1px solid var(--line);padding:8px}.search-submit{grid-column:1}.sold-message{max-width:130px}}
+
+.sold-detail-banner{display:grid;place-items:center;min-height:240px;background:#202522;color:#e7e7e0;font:800 28px Manrope,sans-serif;letter-spacing:.3em;margin-bottom:20px}

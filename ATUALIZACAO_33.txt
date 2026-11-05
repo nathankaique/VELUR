@@ -1,0 +1,15 @@
+VÉLOUR 3.3 - VALIDAÇÃO DE SENHA DE CLIENTE
+
+Cadastro do cliente: aceita no mínimo 6 caracteres, sem exigir letras e números misturados.
+Senha administrativa: permanece com no mínimo 12 caracteres, somente para proteger o painel.
+E-mail duplicado: bloqueado.
+
+Para iniciar no Windows:
+1. Extraia o ZIP em uma NOVA pasta.
+2. Feche o servidor antigo com Ctrl+C.
+3. Abra a pasta nova no VS Code e execute: py -3 -u server.py
+4. Visite http://127.0.0.1:8765/api/health e confirme a versão 3.3.
+5. Acesse http://127.0.0.1:8765/conta.html?v=33 e use Ctrl+Shift+R.
+6. Se aparecer a mensagem antiga, verifique se outro servidor ou aba está usando uma pasta antiga.
+
+O Supabase só recebe novos clientes quando o servidor é iniciado com SUPABASE_DATABASE_URL. Não envie a senha do banco.

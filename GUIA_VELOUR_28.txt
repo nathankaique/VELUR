@@ -1,0 +1,23 @@
+VELOUR 2.8 - COMO EXECUTAR NO WINDOWS
+
+1. Extraia o ZIP e abra velour-marketplace no VS Code.
+2. Execute INICIAR_VELOUR.bat (ou py -3 -u server.py no terminal).
+3. Abra http://127.0.0.1:8765/ (NÃO use Live Server para testar cadastro).
+4. Crie uma conta em /conta.html: senha EXATAMENTE 6 NÚMEROS.
+5. Na página inicial aparece Olá, Nome quando conectado.
+6. Verifique http://127.0.0.1:8765/api/health: database local-sqlite = cadastro apenas local.
+
+PARA USAR SUPABASE (20 CARROS JÁ ESTÃO NO BANCO ONLINE):
+1. Instale a dependência: py -3 -m pip install -r requirements.txt
+2. No painel Supabase, Connect > Connection string > Session pooler, obtenha sua URI privada.
+3. Na sessão atual do terminal PowerShell, ANTES de iniciar o servidor, defina:
+   $env:SUPABASE_DATABASE_URL='postgresql://... SUA URI PRIVADA ...'
+   $env:VELOUR_PORT='8765'
+   py -3 -u server.py
+4. Abra http://127.0.0.1:8765/api/health e confirme database: supabase-postgresql.
+5. Só depois crie usuário de teste. Ele aparecerá em Supabase > Table Editor > customers.
+
+ATENÇÃO: não compartilhe a URI, não a coloque em HTML/JS ou repositórios.
+Os usuários criados no SQLite não migram automaticamente para o Supabase.
+Senhas de 6 dígitos são fracas para produção. O projeto usa hash + sessão HttpOnly,
+mas para publicação pública recomenda-se senha forte e limitação de tentativas.

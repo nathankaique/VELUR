@@ -1,0 +1,18 @@
+VELOUR | LOGIN E CADASTRO NO SUPABASE
+
+1. Feche a janela antiga do INICIAR_VELOUR.bat (se estiver aberta).
+2. Clique duas vezes em INICIAR_SUPABASE.bat.
+3. Digite ou cole SOMENTE a senha do banco de dados Supabase e pressione ENTER.
+   A senha fica invisivel enquanto voce digita.
+   Supabase > Project Settings > Database > Database password, se precisar redefinir.
+4. Espere aparecer CONEXAO OK e VELOUR PRONTO.
+5. O Google Chrome sera aberto automaticamente. Se nao abrir: http://127.0.0.1:8765/conta.html
+6. Cadastre um usuario de teste (email novo e senha com 6 ou mais caracteres).
+7. No Supabase: Table Editor > public > customers para ver nome e email.
+   A senha e salva SOMENTE como hash, nao como texto.
+8. Saia e faca login com o mesmo email e senha. A sessao ficara em customer_sessions.
+9. Para conferir o modo de banco: http://127.0.0.1:8765/api/health
+   A resposta deve mostrar database: supabase-postgresql.
+
+IMPORTANTE: INICIAR_VELOUR.bat usa SQLite LOCAL. Nele os cadastros NAO vao para Supabase.
+Nao envie sua senha a outras pessoas. O PostgreSQL esta acessivel somente pelo servidor Python.

@@ -1,0 +1,33 @@
+VÉLOUR 2.9 | LOGIN, SENHA E SUPABASE (Windows)
+
+IMPORTANTE: SEM configurar a conexao online, o site continua usando SQLite local.
+Os usuarios do SQLite nao aparecem automaticamente em Supabase > Table Editor > customers.
+
+1. Pare o servidor antigo usando Ctrl+C na janela que mostrou VELOUR PRONTO.
+2. Abra o terminal na pasta deste projeto e execute:
+   py -3 -m pip install -r requirements.txt
+3. Entre no Supabase > projeto VELOUR > Connect > Connection string.
+   Selecione Session pooler e COPIE a URI PostgreSQL completa.
+   Substitua [YOUR-PASSWORD] pela senha do banco.
+   Nao compartilhe a URI em prints, chats ou repositorios.
+4. Execute INICIAR_SUPABASE.bat. A janela solicitara a URI; cole-a.
+   A entrada da URI fica invisivel, isso e normal.
+5. Deve aparecer: Banco de dados pronto: Supabase PostgreSQL.
+   Depois: VELOUR PRONTO: http://127.0.0.1:8765/
+6. Deixe a janela aberta. Acesse:
+   http://127.0.0.1:8765/api/health
+   Deve responder database: supabase-postgresql.
+7. Acesse http://127.0.0.1:8765/conta.html, crie um usuario de TESTE
+   (senha com 6 numeros), faca login e teste Mostrar/Ocultar.
+8. Supabase > Table Editor > customers: confirme que o novo usuario aparece.
+   A coluna password_hash guarda somente hash, nao a senha original.
+
+Se sua senha PostgreSQL tiver @, #, / ou caracteres especiais, codifique-a
+corretamente para uso em URI antes de colar.
+No Windows da faculdade, nao tente desativar o firewall ou politicas de TI.
+
+SEGURANCA: 6 numeros e uma senha fraca para producao.
+Antes de publicar na internet, use senhas fortes, HTTPS, protecao anti-brute force
+e configuracao segura de cookies/sessoes.
+
+A integracao online depende da sua URI privada e da rede conseguir acessar o Supabase.

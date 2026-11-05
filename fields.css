@@ -1,0 +1,4 @@
+/* Campos / chips e estados com dimensões compartilhadas */
+:where(.form-control,.form-select,.search-field input,.search-field select,.sort-wrap select,.advanced-filters input,.advanced-filters select){min-height:var(--vl-control-height);border-radius:var(--vl-radius-sm)!important;font-family:var(--vl-font)}
+:where(.chip,.tabs button){min-height:36px;padding:8px 14px;border-radius:999px;transition:background-color .2s,border-color .2s}
+:where(.car-card,.lead-card,.luxury-modal,.search-panel){border-radius:var(--vl-radius-md)}

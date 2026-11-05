@@ -1,0 +1,6 @@
+VÉLOUR 3.1
+- Cliente: senha de no mínimo 6 caracteres, não exatamente 6 dígitos.
+- E-mail repetido: bloqueio no servidor e UNIQUE no banco; normalização para minúsculas.
+- Olhinho de visualização de senha preservado.
+- Senha administrativa continua exigindo 12 caracteres.
+- Supabase: usuários só aparecem online se SUPABASE_DATABASE_URL estiver configurada e servidor iniciado no modo PostgreSQL.

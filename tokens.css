@@ -1,0 +1,2 @@
+/* VÉLOUR Design Tokens: fonte única de medidas e cores */
+:root{--vl-bg:#090a0c;--vl-surface:#121417;--vl-surface-raised:#1b1e22;--vl-ink:#f5f3ee;--vl-muted:#b4b0a8;--vl-accent:#d0ad68;--vl-accent-hover:#e6cb91;--vl-border:rgba(208,173,104,.23);--vl-font:'DM Sans',sans-serif;--vl-display:'Manrope',sans-serif;--vl-space-1:4px;--vl-space-2:8px;--vl-space-3:12px;--vl-space-4:16px;--vl-space-5:24px;--vl-space-6:32px;--vl-space-7:48px;--vl-space-8:64px;--vl-radius-sm:8px;--vl-radius-md:12px;--vl-control-height:44px;--vl-layout-max:1200px}

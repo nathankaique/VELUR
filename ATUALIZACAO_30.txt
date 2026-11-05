@@ -1,0 +1,7 @@
+VÉLOUR 3.0 - Ajuste clean no botão de senha.
+Botão de olho único no login e cadastro, sem texto Mostrar/Ocultar.
+Supabase: execute INICIAR_SUPABASE.bat e informe a URI privada obtida em Connect > Session pooler.
+É necessário instalar dependências com py -3 -m pip install -r requirements.txt.
+Cadastros locais SQLite não aparecem automaticamente no Supabase.
+Abra http://127.0.0.1:8765/api/health e confira database: supabase-postgresql antes de cadastrar.
+Não compartilhe a URI nem a senha.

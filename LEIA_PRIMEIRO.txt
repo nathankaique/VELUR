@@ -1,0 +1,13 @@
+VÉLOUR 2.6 - CORREÇÃO WINDOWS
+
+1) Extraia todo o ZIP.
+2) Abra a pasta velour-marketplace.
+3) Clique duas vezes em INICIAR_VELOUR.bat.
+4) NÃO feche a janela preta enquanto usar o site.
+5) Abra http://127.0.0.1:8000/
+6) Teste http://127.0.0.1:8000/api/health
+
+O problema UnicodeDecodeError no arquivo seed_vehicles.json foi corrigido explicitamente com UTF-8.
+Se não configurar SUPABASE_DATABASE_URL, o servidor utiliza banco local SQLite.
+Para usar Supabase, configure SUPABASE_DATABASE_URL como variável de ambiente do servidor, sem colocar credenciais nos arquivos públicos.
+Não envie sua senha do banco para outras pessoas.

@@ -1,0 +1,4 @@
+VÉLOUR: extraia o ZIP, execute INICIAR_VELOUR.bat e visite http://127.0.0.1:8000/ .
+Se abrir no Live Server, os veículos ilustrativos aparecem, mas banco/login requerem o servidor Python.
+A API pode ser testada em http://127.0.0.1:8000/api/vehicles .
+Para conectar Supabase, configure SUPABASE_DATABASE_URL no terminal e instale pip install -r requirements.txt. Nunca coloque a credencial no navegador.
